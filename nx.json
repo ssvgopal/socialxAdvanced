@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/js",
+      "options": {
+        "analyzeSourceFiles": true
+      }
+    },
+    {
+      "plugin": "@nx/node",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "testTargetName": "test"
+      }
+    },
+    {
+      "plugin": "@nx/react",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "testTargetName": "test"
+      }
+    },
+    {
+      "plugin": "@nx/docker",
+      "options": {
+        "buildTargetName": "build"
+      }
+    }
+  ],
+  "release": {
+    "version": {
+      "preVersionCommand": "yarn build"
+    }
+  }
+}
