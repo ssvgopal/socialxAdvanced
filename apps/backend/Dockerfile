@@ -1,32 +1,33 @@
-# Multi-stage build for Node.js backend
-FROM node:18-alpine AS base
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production && npm cache clean --force
+FROM node:18-alpine
 
-# Build stage
-FROM node:18-alpine AS builder
 WORKDIR /app
+
+# Copy package files
 COPY package*.json ./
-RUN npm ci
+
+# Install dependencies
+RUN npm install
+
+# Copy source code
 COPY . .
+
+# Build the application
 RUN npm run build
 
-# Production stage
-FROM node:18-alpine AS runner
-WORKDIR /app
+# Install production dependencies only
+RUN npm install --only=production && npm cache clean --force
 
-ENV NODE_ENV=production
-
+# Create non-root user
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 backend
 
-COPY --from=base /app/node_modules ./node_modules
-COPY --from=builder --chown=backend:nodejs /app/dist ./dist
-
+# Set permissions
+RUN chown -R backend:nodejs /app
 USER backend
 
 EXPOSE 4000
+
+ENV NODE_ENV=production
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \

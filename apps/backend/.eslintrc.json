@@ -1,0 +1,6 @@
+{
+  "extends": ["../../.eslintrc.js"],
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+  }
+}
