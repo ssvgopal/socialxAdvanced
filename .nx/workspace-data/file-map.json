@@ -1,0 +1,319 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.0.2",
+  "pathMappings": {
+    "@socialx/shared/*": [
+      "packages/shared/src/*"
+    ],
+    "@socialx/frontend/*": [
+      "apps/frontend/src/*"
+    ],
+    "@socialx/backend/*": [
+      "apps/backend/src/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/js",
+      "version": "^22.0.0",
+      "options": {
+        "analyzeSourceFiles": true
+      }
+    },
+    {
+      "name": "@nx/node",
+      "version": "^22.0.0",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "testTargetName": "test"
+      }
+    },
+    {
+      "name": "@nx/react",
+      "version": "^22.0.0",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "testTargetName": "test"
+      }
+    },
+    {
+      "name": "@nx/docker",
+      "version": "^22.0.0",
+      "options": {
+        "buildTargetName": "build"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".lintstagedrc.json",
+        "hash": "10838323249153482484"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "18312573891427719395"
+      },
+      {
+        "file": "docker-compose.dev.yml",
+        "hash": "17194402076377890110"
+      },
+      {
+        "file": "package.json",
+        "hash": "15640932626249421586"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "297616871805424222"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "8564183860285629882"
+      },
+      {
+        "file": "scripts/init-postgres.sql",
+        "hash": "2772196390362064374"
+      },
+      {
+        "file": "scripts/setup.sh",
+        "hash": "8066464830483057542"
+      },
+      {
+        "file": "services/mcp/README.md",
+        "hash": "13182125428060578794"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "1306887311034225392"
+      },
+      {
+        "file": "services/agents/README.md",
+        "hash": "16722274010924060762"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "18052137400652784810"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "8945594172206804484"
+      },
+      {
+        "file": "nx.json",
+        "hash": "803442771197899328"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6432519417336451151"
+      },
+      {
+        "file": "DEVELOPMENT.md",
+        "hash": "18238553800014730488"
+      },
+      {
+        "file": "README.md",
+        "hash": "3313638072585410174"
+      },
+      {
+        "file": ".prettierrc.json",
+        "hash": "319442104772609628"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "11619419116523410223"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "13469207043343598078"
+      },
+      {
+        "file": ".env.example",
+        "hash": "8420591368011641318"
+      }
+    ],
+    "projectFileMap": {
+      "frontend": [
+        {
+          "file": "apps/frontend/.eslintrc.json",
+          "hash": "9463198232128916394"
+        },
+        {
+          "file": "apps/frontend/Dockerfile",
+          "hash": "1467165435185322948"
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "14044674672839403760",
+          "deps": [
+            "npm:jest"
+          ]
+        },
+        {
+          "file": "apps/frontend/next-env.d.ts",
+          "hash": "13904763933831424769"
+        },
+        {
+          "file": "apps/frontend/next.config.js",
+          "hash": "12834369495100937392"
+        },
+        {
+          "file": "apps/frontend/package.json",
+          "hash": "13262928375660117632",
+          "deps": [
+            "npm:@types/node@20.19.24",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint-config-next",
+            "npm:typescript",
+            "npm:jest",
+            "npm:@testing-library/react",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "16743132231998474896"
+        },
+        {
+          "file": "apps/frontend/public/README.md",
+          "hash": "3738078020208498224"
+        },
+        {
+          "file": "apps/frontend/src/app/globals.css",
+          "hash": "2172668849966456987"
+        },
+        {
+          "file": "apps/frontend/src/app/layout.tsx",
+          "hash": "12313322949295281606",
+          "deps": [
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/page.tsx",
+          "hash": "3045278536027525721",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/test/setup.ts",
+          "hash": "6990492438900336337"
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "13292887629102606583"
+        }
+      ],
+      "backend": [
+        {
+          "file": "apps/backend/.eslintrc.json",
+          "hash": "17430678929171605705"
+        },
+        {
+          "file": "apps/backend/Dockerfile",
+          "hash": "7278360556093839355"
+        },
+        {
+          "file": "apps/backend/jest.config.ts",
+          "hash": "6895812290769670987",
+          "deps": [
+            "npm:jest"
+          ]
+        },
+        {
+          "file": "apps/backend/package.json",
+          "hash": "15829191057528790172",
+          "deps": [
+            "npm:@types/express",
+            "npm:@types/cors",
+            "npm:@types/node@20.19.24",
+            "npm:tsx",
+            "npm:typescript",
+            "npm:jest",
+            "npm:@types/jest",
+            "npm:ts-jest",
+            "npm:express",
+            "npm:cors",
+            "npm:helmet",
+            "npm:dotenv",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/backend/project.json",
+          "hash": "15472829158258815849"
+        },
+        {
+          "file": "apps/backend/src/main.ts",
+          "hash": "956924050276660841",
+          "deps": [
+            "npm:express",
+            "npm:cors",
+            "npm:helmet",
+            "npm:dotenv"
+          ]
+        },
+        {
+          "file": "apps/backend/tsconfig.app.json",
+          "hash": "16065001533324563585"
+        },
+        {
+          "file": "apps/backend/tsconfig.json",
+          "hash": "10681567873742037223"
+        }
+      ],
+      "shared": [
+        {
+          "file": "packages/shared/jest.config.ts",
+          "hash": "14924554932326207558",
+          "deps": [
+            "npm:jest"
+          ]
+        },
+        {
+          "file": "packages/shared/package.json",
+          "hash": "7304906672022329035",
+          "deps": [
+            "npm:typescript",
+            "npm:jest",
+            "npm:@types/jest",
+            "npm:ts-jest",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/shared/project.json",
+          "hash": "10689177616719118123"
+        },
+        {
+          "file": "packages/shared/src/constants/index.ts",
+          "hash": "14141238591115321381"
+        },
+        {
+          "file": "packages/shared/src/index.ts",
+          "hash": "13463359418045747701"
+        },
+        {
+          "file": "packages/shared/src/types/index.ts",
+          "hash": "8457236539972260590"
+        },
+        {
+          "file": "packages/shared/src/utils/index.ts",
+          "hash": "17978374175596138987"
+        },
+        {
+          "file": "packages/shared/tsconfig.lib.json",
+          "hash": "16419278894278109472"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "10902071606061297423"
+}

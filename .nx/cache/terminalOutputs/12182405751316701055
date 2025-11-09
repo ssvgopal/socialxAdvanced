@@ -1,0 +1,23 @@
+ [33m[1m⚠[22m[39m Invalid next.config.js options detected: 
+ [33m[1m⚠[22m[39m     Unrecognized key(s) in object: 'appDir' at "experimental"
+ [33m[1m⚠[22m[39m See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[31mFailed to compile.
+[39m
+[36msrc/app/layout.tsx[39m
+[31m[1mType error[22m[39m: File '/home/engine/project/apps/frontend/src/app/layout.tsx' is not under 'rootDir' '/home/engine/project/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via '../../../src/app/layout.js' from file '/home/engine/project/apps/frontend/.next/types/app/layout.ts'
+    Imported via '../../../src/app/layout.js' from file '/home/engine/project/apps/frontend/.next/types/app/layout.ts'
+
+[2K[1G[?25hNext.js build worker exited with code: 1 and signal: null
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[?25h[1m[31mBuild process exited due to code 1  [39m[22m

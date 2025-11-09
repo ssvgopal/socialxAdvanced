@@ -1,0 +1,20 @@
+  [1m[38;2;173;127;168m▲ Next.js 14.2.33[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m
+ [37m[1m [22m[39m We detected TypeScript in your project and reconfigured your [36mtsconfig.json[39m file for you. Strict-mode is set to [36mfalse[39m by default.
+ [37m[1m [22m[39m The following suggested values were added to your [36mtsconfig.json[39m. These values [36mcan be changed[39m to fit your project's needs:
+
+ [37m[1m [22m[39m 	- [36mplugins[39m was updated to add [1m{ name: 'next' }[22m
+
+[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m
+ [33m[1m⚠[22m[39m The Next.js plugin was not detected in your ESLint configuration. See https://nextjs.org/docs/basic-features/eslint#migrating-existing-config
+[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h[31m
+Failed to compile.[39m
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[?25h
+[36m./src/app/layout.tsx[39m
+[33m12[39m:[33m13[39m  [31m[1mError[22m[39m: 'React' is not defined.  [90m[1mno-undef[22m[39m
+
+[36minfo[39m  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[?25h[1m[31mBuild process exited due to code 1  [39m[22m

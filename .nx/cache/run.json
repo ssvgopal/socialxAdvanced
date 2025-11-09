@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx run-many --target=lint --all --skip-nx-cache",
+    "startTime": "2025-11-09T12:29:13.942Z",
+    "endTime": "2025-11-09T12:29:19.704Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "shared:lint",
+      "target": "lint",
+      "projectName": "shared",
+      "hash": "3050590369378176384",
+      "startTime": "2025-11-09T12:29:14.018Z",
+      "endTime": "2025-11-09T12:29:17.886Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "backend:lint",
+      "target": "lint",
+      "projectName": "backend",
+      "hash": "11720327246420836818",
+      "startTime": "2025-11-09T12:29:14.161Z",
+      "endTime": "2025-11-09T12:29:17.913Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "frontend:lint",
+      "target": "lint",
+      "projectName": "frontend",
+      "hash": "11549589402013216104",
+      "startTime": "2025-11-09T12:29:14.094Z",
+      "endTime": "2025-11-09T12:29:19.697Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

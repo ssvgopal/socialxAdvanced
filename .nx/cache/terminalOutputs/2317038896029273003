@@ -1,0 +1,11 @@
+
+Linting "backend"...
+[0m[0m
+[0m[4m/home/engine/project/apps/backend/src/main.ts[24m[0m
+[0m  [2m43:67[22m  [31merror[39m  'next' is defined but never used. Allowed unused args must match /^_/u  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m43:67[22m  [31merror[39m  'next' is defined but never used                                        [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[31m[1m✖ 2 problems (2 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
+✖ 2 problems (2 errors, 0 warnings)
+

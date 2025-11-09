@@ -1,0 +1,4 @@
+> nx run backend:build
+
+Compiling TypeScript files for project "backend"...
+Done compiling TypeScript files for project "backend".

@@ -1,0 +1,1874 @@
+{
+  "16481595397145773261apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "1583868568866207627apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "6672902659890935035apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "9679874935028452402apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "13717371641750571586apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "6412853061949209837apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "16585122111695742603apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "786971502593008556apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "4865974308052677009apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "15746353716057800490apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "10095311218188797333apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "10519236171073997334apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "14459451908013578185apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "9818748880305723549apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "9511942140735622506apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "1036789351968477416apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "1325468031863979568apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "16465954583732925179apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "14658764465578894061apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "7165229326463821206apps/frontend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/frontend",
+          "args": [
+            "--tag apps-frontend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-frontend",
+        "options": {
+          "cwd": "apps/frontend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "2503170329940536461apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "14623441043050864562apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "11813283485914161589apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  },
+  "2480285537341039059apps/backend/Dockerfile": {
+    "targets": {
+      "docker:build": {
+        "dependsOn": [
+          "build",
+          "^build"
+        ],
+        "command": "docker build .",
+        "options": {
+          "cwd": "apps/backend",
+          "args": [
+            "--tag apps-backend"
+          ]
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker build",
+          "help": {
+            "command": "docker build --help",
+            "example": {
+              "options": {
+                "cache-from": "type=s3,region=eu-west-1,bucket=mybucket .",
+                "cache-to": "type=s3,region=eu-west-1,bucket=mybucket ."
+              }
+            }
+          }
+        }
+      },
+      "docker:run": {
+        "dependsOn": [
+          "docker:build"
+        ],
+        "command": "docker run {args} apps-backend",
+        "options": {
+          "cwd": "apps/backend"
+        },
+        "inputs": [
+          "default",
+          "^default"
+        ],
+        "metadata": {
+          "technologies": [
+            "docker"
+          ],
+          "description": "Run Docker run",
+          "help": {
+            "command": "docker run --help",
+            "example": {
+              "options": {
+                "args": [
+                  "-p",
+                  "3000:3000"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "nx-release-publish": {
+        "executor": "@nx/docker:release-publish"
+      }
+    },
+    "metadata": {
+      "targetGroups": {
+        "Docker": [
+          "docker:build",
+          "docker:run",
+          "nx-release-publish"
+        ]
+      }
+    }
+  }
+}
